@@ -1,0 +1,25 @@
+syntax = "proto3";
+package admin;
+
+message Message {
+	string name = 1;
+	bytes  data = 2;
+}
+
+message Rpc {
+	string  rpc_name = 1;
+	Message msg      = 2;
+}
+
+message Request {
+	uint32 index       = 1;
+	Rpc    remote_call = 2;
+}
+
+message Response {
+	uint32  index = 1;
+	Message msg   = 2;
+}
+
+message Void {
+}

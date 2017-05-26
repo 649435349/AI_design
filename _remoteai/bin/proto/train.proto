@@ -1,0 +1,45 @@
+syntax = "proto3";
+//import "common.proto";
+
+package train.train;
+
+message train_none {
+}
+
+message default_data{
+	string data = 1;
+}
+
+message sample_data{
+	string data = 1;
+}
+
+message start_pvp_data{
+	string data = 1;
+}
+
+message action_data{
+	string data = 1;
+}
+
+message pvp_data{
+	string data = 1;
+}
+
+service TrainService {
+	rpc ready         (default_data) returns (train_none);
+	rpc requestAction (default_data) returns (train_none);
+	rpc onPVPFinish   (default_data) returns (train_none);
+	rpc onPVPStart    (default_data) returns (train_none);
+}
+
+service TrainClient {
+	//rpc addSample     (default_data)   returns (train_none);
+	//rpc delSample     (default_data)   returns (train_none);
+	rpc startPVP        (start_pvp_data) returns (train_none);
+	rpc onRequestAction (default_data)   returns (train_none);
+	rpc tick            (train_none)     returns (train_none);
+}
+
+option py_generic_services = true;
+
