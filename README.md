@@ -20,7 +20,7 @@ README
 为了快速开发实现各种修改和想法，框架采用BG是Tensorflow的Keras，也有自己手写的神经网络。
 网络通信部分才用了socket编程和多线程threading模式。
 我用的所有方法，全部采用了2000到现在（2017）的强化学习方法（DRL），如Policy Gradient Networks,Deep Q-Network
-,Double DQN,Dueling DQN,A3c,Trop(借鉴了[https://github.com/joschu/modular_rl](https://github.com/joschu/modular_rl))等。
+,Double DQN,Dueling DQN,A3c,Trop(借鉴了https://github.com/joschu/modular_rl)等。
 结果是PG和Dueling DQN获得了比较好的效果，每个职业的对战均能获得0.7左右的胜率，合理的技能搭配之后能达到0.9左右
 遗憾的是，由于实习时间有限，我未能研究完其他算法，由于技术平台限制，不能够使人物边移动边放技能，效果始终差强人意。
 ```
