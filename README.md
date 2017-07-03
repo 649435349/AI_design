@@ -13,4 +13,5 @@ README
    
 ## What is used and what is the performance?
    全部用Python写成，Python也是我最喜欢的语言。为了快速开发实现各种修改和想法，框架采用BG是Tensorflow的Keras。
-   我用的所有方法，全部采用了2000到现在（2017）的强化学习方法（DRL），如Policy Gradient Networks,Deep Q-Network,Double DQN,A3c,Trop(借鉴了[https://github.com/joschu/modular_rl](https://github.com/joschu/modular_rl)
+   我用的所有方法，全部采用了2000到现在（2017）的强化学习方法（DRL），如Policy Gradient Networks,Deep Q-Network,Double DQN,A3c,Trop(借鉴了
+   [https://github.com/joschu/modular_rl](https://github.com/joschu/modular_rl)
